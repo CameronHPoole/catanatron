@@ -9,6 +9,7 @@ from catanatron.players.minimax import AlphaBetaPlayer, SameTurnAlphaBetaPlayer
 from catanatron.players.search import VictoryPointPlayer
 from catanatron.players.mcts import MCTSPlayer
 from catanatron.players.playouts import GreedyPlayoutsPlayer
+from catanatron.players.cognitive import CognitivePlayer
 
 
 # Player must have a CODE, NAME, DESCRIPTION, CLASS.
@@ -63,6 +64,12 @@ CLI_PLAYERS = [
         "SameTurnAlphaBetaPlayer",
         "AlphaBeta but searches only within turn",
         SameTurnAlphaBetaPlayer,
+    ),
+        CliPlayer(
+        "COG",
+        "CognitivePlayer",
+        "TODO",
+        CognitivePlayer,
     ),
 ]
 
